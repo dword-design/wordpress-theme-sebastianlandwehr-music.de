@@ -27,7 +27,7 @@ add_theme_support('post-thumbnails');
 add_image_size('fullscreen', 1920, 99999);
 
 function theme_scripts() {
-    wp_enqueue_script('index.js', get_template_directory_uri() . '/dist/index.js', array('jquery'), true);
+    wp_enqueue_script('index.js', get_template_directory_uri() . '/dist/index.js', true);
     wp_localize_script('index.js', 'variables', array('ajaxUrl' => admin_url('admin-ajax.php')));
 }
 

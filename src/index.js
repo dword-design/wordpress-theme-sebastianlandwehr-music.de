@@ -1,3 +1,4 @@
+import 'jquery'
 import './front-page'
 import './fullscreen-video'
 import './iframe'
