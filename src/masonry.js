@@ -1,8 +1,7 @@
 import 'masonry-layout'
 import 'imagesloaded'
 
-import $ from 'jquery'
-
+const $ = window.jQuery
 $('.gallery').imagesLoaded(function () {
   $(this).masonry({
     itemSelector: '.gallery-item',

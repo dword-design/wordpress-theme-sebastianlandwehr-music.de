@@ -9,8 +9,8 @@
       format("embedded-opentype"),
     /* IE6-IE8 */ url("../fonts/alegreya-sc-v7-latin-regular.woff2")
       format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/alegreya-sc-v7-latin-regular.woff")
-      format("woff"),
+    /* Super Modern Browsers */
+      url("../fonts/alegreya-sc-v7-latin-regular.woff") format("woff"),
     /* Modern Browsers */ url("../fonts/alegreya-sc-v7-latin-regular.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
@@ -24,7 +24,8 @@
   font-family: "Alegreya SC";
   src: url("../fonts/alegreya-sc-v7-latin-700.eot"); /* IE9 Compat Modes */
   src: local("Alegreya SC Bold"), local("AlegreyaSC-Bold"),
-    url("../fonts/alegreya-sc-v7-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/alegreya-sc-v7-latin-700.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */ url("../fonts/alegreya-sc-v7-latin-700.woff2") format("woff2"),
     /* Super Modern Browsers */ url("../fonts/alegreya-sc-v7-latin-700.woff")
       format("woff"),
@@ -41,7 +42,8 @@
   font-family: "Alegreya SC";
   src: url("../fonts/alegreya-sc-v7-latin-900.eot"); /* IE9 Compat Modes */
   src: local("Alegreya SC Black"), local("AlegreyaSC-Black"),
-    url("../fonts/alegreya-sc-v7-latin-900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/alegreya-sc-v7-latin-900.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */ url("../fonts/alegreya-sc-v7-latin-900.woff2") format("woff2"),
     /* Super Modern Browsers */ url("../fonts/alegreya-sc-v7-latin-900.woff")
       format("woff"),

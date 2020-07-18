@@ -1,5 +1,4 @@
-import $ from 'jquery'
-
+const $ = window.jQuery
 const $embed = $('.fullscreen-video .video-wrapped')
 $embed.hide()
 $('.fullscreen-video__is-playing').change(function () {

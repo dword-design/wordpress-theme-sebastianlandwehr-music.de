@@ -1,6 +1,6 @@
 import { endent } from '@dword-design/functions'
-import $ from 'jquery'
 
+const $ = window.jQuery
 $('.home').each(function () {
   // Add anchor to logo
   $('.logo').attr('href', '#teaser')

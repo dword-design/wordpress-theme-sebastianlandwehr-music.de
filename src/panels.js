@@ -1,5 +1,4 @@
-import $ from 'jquery'
-
+const $ = window.jQuery
 let previousScrollPosition = 0
 function updatePanels() {
   const $panels = $('.panel')

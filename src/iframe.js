@@ -1,5 +1,4 @@
-import $ from 'jquery'
-
+const $ = window.jQuery
 $.iframe = function () {
   $('iframe').each(function () {
     const $parent = $(this).parent()

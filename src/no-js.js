@@ -1,3 +1,2 @@
-import $ from 'jquery'
-
+const $ = window.jQuery
 $('.no-js').removeClass('no-js')
