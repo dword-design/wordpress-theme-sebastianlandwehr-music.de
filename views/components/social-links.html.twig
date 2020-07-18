@@ -1,0 +1,11 @@
+<div class="social-links {% if slim %}social-links--slim{% endif %}">
+    {% for row in socialMedia|batch(4) %}
+        <div class="social-links__wrapper-4">
+            {% for item in row %}
+                <div class="social-links__item-wrapper">
+                    <a target="_blank" class="social-links__item social-links__item--{{ item.name }} icon-{{ item.name }}" href="{{ item.url }}"></a>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,26 @@
+<div id="{{ cd.ID }}" class="cd cd-{{ type }}">
+    <div class="cd__inner">
+        <div class="cd__cover-image">
+            <img src="{{ cd.thumbnail.src('medium') }}">
+        </div>
+        <div class="cd__content-wrapper">
+            <div class="cd__content">
+                <h2>{% if cd.get_field('kuenstler') %}{{ cd.get_field('kuenstler') }}<br/>{% endif %}{{ cd.title }}</h2>
+                {{ cd.content }}
+
+                <div class="cd__social-link-container cd__social-link-container-priority--primary">
+                    {% include 'components/social-link--cd.html.twig' with { cd: cd, name: 'paypal' } %}
+                    {% include 'components/social-link--cd.html.twig' with { cd: cd, name: 'email', sameTab: true } %}
+                </div>
+                <div class="cd__social-link-container cd__social-link-container-priority--secondary">
+                    {% include 'components/social-link--cd.html.twig' with { cd: cd, name: 'spotify' } %}
+                    {% include 'components/social-link--cd.html.twig' with { cd: cd, name: 'amazon' } %}
+                    {% include 'components/social-link--cd.html.twig' with { cd: cd, name: 'itunes' } %}
+                    {% include 'components/social-link--cd.html.twig' with { cd: cd, name: 'google-play' } %}
+                </div>
+
+                {{ cd.get_field('hoerproben') }}
+            </div>
+        </div>
+    </div>
+</div>

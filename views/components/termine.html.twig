@@ -1,0 +1,5 @@
+{% set scope = scope ?: 'upcoming' %}
+
+{% filter shortcodes %}
+    [gigpress_shows scope="{{ scope }}" group_artists="no"]
+{% endfilter %}

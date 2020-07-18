@@ -1,0 +1,23 @@
+.songtexte-toc {
+  font-size: $songtexte-toc-font-size;
+  line-height: $songtexte-toc-line-height;
+  text-align: center;
+}
+
+.songtexte-container {
+  margin-top: 100%;
+}
+
+.songtext {
+  max-width: 500px;
+  padding-top: 170px;
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+
+  .songtext__content {
+    padding: 2rem;
+    background: $songtext-background-color;
+  }
+}

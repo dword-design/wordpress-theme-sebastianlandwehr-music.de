@@ -1,0 +1,9 @@
+{% extends 'page.html.twig' %}
+
+{% block main_content %}
+    <h1>{{ post.title }}</h1>
+
+    {% include 'components/termine.html.twig' %}
+    {% include 'components/newsletter.html.twig' with { headline: 'Über Konzerte informiert werden' } %}
+    {% include 'components/termine.html.twig' with { scope: 'past' }%}
+{% endblock %}

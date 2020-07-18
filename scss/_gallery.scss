@@ -1,0 +1,36 @@
+.gallery {
+  margin: 0 !important;
+}
+
+.gallery-item {
+  margin-top: 0 !important;
+  padding: 2px;
+
+  @media (max-width: $breakpoint-4) {
+    width: 100/3 + 0% !important;
+  }
+
+  @media (max-width: 570px) {
+    width: 50% !important;
+  }
+
+  img {
+    @include simpletrans;
+
+    border: none !important;
+    outline: 1px solid transparent; // Chrome fix for aliasing during image resize
+  }
+
+  a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    line-height: 0; // Otherwise there is a gap beneath the image
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

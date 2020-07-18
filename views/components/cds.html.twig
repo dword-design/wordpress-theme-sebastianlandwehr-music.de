@@ -1,0 +1,5 @@
+<div class="cds-{{ type }}">
+    {% for cd in cds %}
+        {% include 'components/cd.html.twig' with { cd: cd } %}
+    {% endfor %}
+</div>

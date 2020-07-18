@@ -1,0 +1,7 @@
+.external-link::before {
+  content: $fa-var-external-link;
+  position: relative;
+  bottom: -0.1rem;
+  margin-right: 0.4rem;
+  font-family: FontAwesome, sans-serif;
+}

@@ -1,0 +1,5 @@
+{% if cd.get_field(name ~ '_link') %}
+    <div class="cd__social-link cd__social-link-name--{{ name }}">
+        <a {% if not sameTab %}target="_blank"{% endif %} href="{{ cd.get_field(name ~ '_link') }}" class="icon-{{ name }} cd__social-link-content"></a>
+    </div>
+{% endif %}

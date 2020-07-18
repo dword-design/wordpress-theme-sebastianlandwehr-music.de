@@ -1,0 +1,84 @@
+@mixin social-links--slim {
+  top: 6rem;
+
+  .social-links__item {
+    border: none;
+  }
+}
+
+.social-links {
+  @include simpletrans;
+
+  position: fixed;
+  top: 8rem;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  max-width: $page-max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  pointer-events: none;
+
+  @media (max-width: 400px) {
+    @include social-links--slim;
+
+    position: absolute;
+    top: 7rem;
+
+    .menu-bar--slim & {
+      top: 4rem;
+    }
+
+    .social-links__wrapper-4 {
+      line-height: 0;
+      text-align: justify;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+      }
+    }
+
+    .social-links__item {
+      margin-bottom: 0;
+    }
+
+    .social-links__item-wrapper {
+      display: inline-block;
+    }
+  }
+
+  .social-links__item {
+    @include simpletrans;
+
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparentize(white, 0.5);
+    border-radius: 100%;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    pointer-events: auto;
+
+    &:hover,
+    &:focus {
+      background: $social-icon-hover-color;
+      color: white;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &.social-links--slim {
+    @include social-links--slim;
+  }
+}

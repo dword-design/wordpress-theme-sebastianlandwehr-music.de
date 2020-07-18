@@ -1,0 +1,11 @@
+{% extends 'page.html.twig' %}
+
+{% block main_content %}
+    <h1>Diskografie</h1>
+    {% for section in cds %}
+        <h2>{{ section.label }}</h2>
+        {% include 'components/cds.html.twig' with { type: section.type, cds: section.cds } %}
+    {% endfor %}
+
+     {{ post.content }}
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "layout/base.html.twig" %}
+
+{% block body_content %}
+    {% include 'panel-teaser.html.twig' with { post: teaserPost } %}
+    {% include 'panel-home.html.twig' with { post: homePost } %}
+{% endblock %}

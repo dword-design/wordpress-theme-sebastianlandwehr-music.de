@@ -1,0 +1,5 @@
+{% for post in posts %}
+    {% include 'components/news-item.html.twig' %}
+{% endfor %}
+
+<div class="news__pagination-next" data-value="{{ next }}"></div>

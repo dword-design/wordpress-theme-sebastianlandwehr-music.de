@@ -1,0 +1,26 @@
+{% extends "layout/base.html.twig" %}
+
+{% set mainContentVar %}
+    {% block main_content %}
+        <h1>{{ post.title }}</h1>
+        <div class="typeset">{{ post.content }}</div>
+    {% endblock %}
+{% endset %}
+
+{% set fixedContentVar %}
+    {% block fixed_content %}{% endblock %}
+{% endset %}
+
+{% block body_content %}
+    {% embed 'components/panel.html.twig' with { post: post } %}
+
+        {% block main_content %}
+            {{ mainContentVar }}
+        {% endblock %}
+
+        {% block fixed_content %}
+            {{ fixedContentVar }}
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

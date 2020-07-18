@@ -1,0 +1,14 @@
+.newsletter-button {
+  display: inline-block;
+  padding: 1rem;
+  background: $color1;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background: lighten($color1, 3%);
+    color: #fff;
+  }
+}

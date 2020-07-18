@@ -1,0 +1,48 @@
+.pagination__next,
+.pagination__previous,
+.pagination__pages {
+  display: block;
+}
+
+.pagination__next {
+  float: right;
+
+  &::after {
+    content: $fa-var-arrow-right;
+    margin-left: 0.5rem;
+    font-family: FontAwesome, sans-serif;
+  }
+}
+
+.pagination__previous {
+  float: left;
+
+  &::before {
+    content: $fa-var-arrow-left;
+    margin-right: 0.5rem;
+    font-family: FontAwesome, sans-serif;
+  }
+}
+
+.pagination__pages {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.pagination__page:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media (max-width: 463px) {
+  .pagination__next,
+  .pagination__previous {
+    overflow: hidden;
+    max-width: 20px;
+    white-space: nowrap;
+  }
+
+  .pagination__next {
+    direction: rtl;
+  }
+}

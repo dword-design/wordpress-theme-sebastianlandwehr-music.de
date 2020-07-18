@@ -1,0 +1,54 @@
+// Palette
+$color1: rgb(124, 0, 58);
+$color2: #f7ba84;
+$color3: hsla(237, 40%, 30%, 1);
+
+// Colors
+$menubar-background-color: $color1;
+$menubar-background-hover-color: lighten($menubar-background-color, 5%);
+$link-color: $color2;
+$link-color-hover: darken($color2, 10%);
+$social-icon-color: $menubar-background-color;
+$social-icon-hover-color: lighten($social-icon-color, 5%);
+$newsletter-background: $color3;
+$newsletter-button-hover-color: $social-icon-color;
+$songtext-background-color: transparentize($color3, 0.5);
+$termin-background-color: transparentize($color3, 0.5);
+$play-video-cancel-color: #888;
+$play-video-cancel-color-hover: lighten($play-video-cancel-color, 10%);
+$light-border: 1px solid transparentize(#fff, 0.72);
+$kuenstler-description-border: 6px solid $color3;
+$contact-background-color: transparentize($color3, 0.4);
+$button-hover-background-color: $social-icon-color;
+
+// Sizes and spacing
+$page-max-width: 1500px;
+$body-font-size: 1.1rem;
+$body-line-height: 1.6em;
+$news-message-font-size: 1.4rem;
+$shared-content-font-size: 1.1rem;
+$cd-cover-size-solo: 300px;
+$spacing: 1.5rem;
+$content-margin-top: 8rem;
+$songtexte-toc-font-size: 1.3rem;
+$songtexte-toc-line-height: 2.6rem;
+$footer-font-size: 0.9rem;
+$termine-date-and-time-width: 6rem;
+$termine-artist-width: 35%;
+
+// Fonts
+$font-family-logo: "Amatica SC", arial, sans-serif;
+$font-family-content: "Alegreya Sans", arial, sans-serif;
+$font-family-headline: "Alegreya SC", serif;
+
+// Times
+$simpletrans-time: 0.3s;
+
+// Breakpoints
+$breakpoint-1: 1185px; // Smaller padding for menu
+$breakpoint-2: 1040px; // Full width for 50% wide pages
+$breakpoint-3: 1018px; // Hamburger menu
+$breakpoint-4: 810px;
+$breakpoint-5: 500px;
+
+$fa-font-path: "bower_components/components-font-awesome/fonts";

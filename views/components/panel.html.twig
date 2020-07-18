@@ -1,0 +1,17 @@
+<div class="panel panel--{{ post.post_name }} {% if classes %}{{ classes }}{% endif %}"
+     id="{{ post.post_name }}"
+     {% if post.thumbnail %}style="background-image: url({{ post.thumbnail.src('fullscreen') }})" {% endif %}
+    {% if id %}id="{{ id }}"{% endif %}>
+
+    <div class="panel__page-width-wrapper">
+        <div class="panel__content-container">
+            <div class="panel__content">
+                {% block main_content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    {% block fixed_content %}{% endblock %}
+
+    {% include 'components/footer.html.twig' %}
+</div>

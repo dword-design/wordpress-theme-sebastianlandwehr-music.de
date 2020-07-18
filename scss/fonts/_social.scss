@@ -1,0 +1,101 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: social, sans-serif;
+  src: url("../fonts/social.eot?22645708");
+  src: url("../fonts/social.eot?22645708#iefix") format("embedded-opentype"),
+    url("../fonts/social.woff2?22645708") format("woff2"),
+    url("../fonts/social.woff?22645708") format("woff"),
+    url("../fonts/social.ttf?22645708") format("truetype"),
+    url("../fonts/social.svg?22645708#social") format("svg");
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'social';
+    src: url('../font/social.svg?22645708#social') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+
+  /* Animation center compensation - margins should be symmetric */
+
+  /* remove if not needed */
+  margin-left: 0.2em;
+  font-weight: normal;
+  font-style: normal;
+
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes */
+  font-variant: normal;
+  font-family: social, sans-serif;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  speak: none;
+
+  /* you can be more comfortable with increased icons size */
+
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-amazon::before {
+  content: "\e800";
+} /* '' */
+.icon-email::before {
+  content: "\e801";
+} /* '' */
+.icon-facebook::before {
+  content: "\e802";
+} /* '' */
+.icon-google-play::before {
+  content: "\e803";
+} /* '' */
+.icon-itunes::before {
+  content: "\e804";
+} /* '' */
+.icon-paypal::before {
+  content: "\e805";
+} /* '' */
+.icon-soundcloud::before {
+  content: "\e806";
+  width: 2rem;
+  font-size: 55%;
+  transform: translateY(-0.3rem);
+} /* '' */
+.icon-spotify::before {
+  content: "\e807";
+  width: 1.7rem;
+  font-size: 80%;
+} /* '' */
+.icon-twitter::before {
+  content: "\e808";
+  width: 1.6rem;
+  font-size: 90%;
+} /* '' */
+.icon-youtube::before {
+  content: "\e809";
+} /* '' */

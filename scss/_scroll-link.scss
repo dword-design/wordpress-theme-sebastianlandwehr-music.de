@@ -1,0 +1,46 @@
+.scroll-link {
+  @include simpletrans;
+
+  display: block;
+  width: 12rem;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0.4;
+
+  .scroll-link__arrow {
+    overflow: hidden;
+    height: 4rem;
+    text-align: center;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 8rem;
+      height: 8rem;
+      background: transparentize(#fff, 0.3);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+    opacity: 0.8;
+  }
+
+  &.scroll-link--down .scroll-link__arrow {
+    margin-top: 1rem;
+
+    &::after {
+      transform: translateY(-4.3rem) scaleY(0.5) rotate(45deg);
+    }
+  }
+
+  &.scroll-link--up .scroll-link__arrow {
+    margin-bottom: 1rem;
+
+    &::after {
+      transform: scaleY(0.5) rotate(45deg);
+    }
+  }
+}

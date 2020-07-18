@@ -1,0 +1,22 @@
+.loading-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border: 5px solid white;
+  border-top-color: transparent;
+  border-radius: 100%;
+  opacity: 0.6;
+  animation: spin-translated 2s infinite linear;
+}
+
+@keyframes spin-translated {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(359deg);
+  }
+}

@@ -1,0 +1,162 @@
+.cd__cover-image {
+  line-height: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cd-solo {
+  margin-bottom: 2rem;
+
+  .cd__cover-image {
+    float: left;
+    max-width: $cd-cover-size-solo;
+    border: $light-border;
+
+    @media (max-width: $breakpoint-4) {
+      float: none;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 550px) {
+      max-width: initial;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .cd__content {
+    margin-left: $cd-cover-size-solo;
+    padding-left: 1rem;
+
+    @media (max-width: $breakpoint-4) {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.cd-band,
+.cd-gast {
+  float: left;
+  padding: 0.5rem;
+
+  @media (max-width: 744px) {
+    width: 50%;
+  }
+
+  @media (max-width: 550px) {
+    float: none;
+    width: auto;
+
+    .cd__inner {
+      max-width: initial;
+    }
+  }
+
+  .cd__inner {
+    position: relative;
+    max-width: $cd-cover-size-solo;
+    border: $light-border;
+
+    .cd__content-wrapper {
+      @include simpletrans;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: transparentize(black, 0.15);
+      opacity: 0;
+
+      a::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: 0;
+        bottom: -50%;
+        left: 0;
+      }
+    }
+
+    &:hover {
+      .cd__content-wrapper {
+        opacity: 1;
+      }
+    }
+
+    .cd__content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.cds-band,
+.cds-gast {
+  @include clearfix;
+
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.cd__social-link {
+  float: left;
+  margin-bottom: 1rem;
+
+  &:not(:first-child) {
+    padding-left: 0.5rem;
+  }
+
+  &:not(:last-child) {
+    padding-right: 0.5rem;
+  }
+}
+
+.cd__social-link-container {
+  overflow: hidden;
+}
+
+.cd__social-link-container-priority--primary .cd__social-link {
+  width: 50%;
+}
+
+.cd__social-link-container-priority--secondary .cd__social-link {
+  width: 25%;
+}
+
+.cd__social-link-content {
+  @include simpletrans;
+
+  display: block;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: $social-icon-color;
+  color: white;
+  font-size: 2rem;
+  line-height: 0;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background: $social-icon-hover-color;
+    color: white;
+  }
+}
+
+.cd__social-link-name--paypal {
+  .cd__social-link-content::before {
+    width: 7rem;
+  }
+}

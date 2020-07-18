@@ -1,0 +1,73 @@
+@mixin clearfix {
+  *zoom: 1;
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin darken($value: 0.15) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparentize(black, $value);
+  }
+}
+
+@mixin panel($max-width) {
+  .panel__content {
+    width: auto;
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@mixin panel-wide {
+  @include panel(1100px);
+}
+
+@mixin panel-narrow {
+  @include panel(750px);
+}
+
+@mixin panel-left-half {
+  .panel__content-container {
+    padding-right: 50%;
+
+    @media (max-width: $breakpoint-2) {
+      padding-right: 1rem;
+    }
+  }
+
+  .panel__content {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@mixin simpletrans {
+  transition: all $simpletrans-time;
+}
+
+@mixin visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

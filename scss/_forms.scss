@@ -1,0 +1,28 @@
+input:not([type="image"]),
+textarea,
+button {
+  padding: 0.5rem;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.2rem;
+
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+[type="submit"] {
+  @include simpletrans;
+
+  width: auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $button-hover-background-color;
+    background: $button-hover-background-color;
+  }
+}

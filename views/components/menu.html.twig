@@ -1,0 +1,7 @@
+<input type="checkbox" id="menu__toggle" class="menu__toggle" />
+<label for="menu__toggle"></label>
+<ul class="menu">
+    {% for item in menu.get_items %}
+    <li class="menu__item {{ item.classes | join(' ') }}"><a class="menu__link" href="{{ item.link }}">{{ item.title }}</a>
+        {% endfor %}
+</ul>

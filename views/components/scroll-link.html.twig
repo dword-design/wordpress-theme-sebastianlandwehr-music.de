@@ -1,0 +1,7 @@
+{% set direction = direction ?: 'down' %}
+
+<a class="scroll-link scroll-link--{{ direction }}" href="{{ url }}">
+    {% if direction == 'down' %}{{ label }}{% endif %}
+    <div class="scroll-link__arrow"></div>
+    {% if direction == 'up' %}{{ label }}{% endif %}
+</a>

@@ -1,0 +1,28 @@
+.video-wrapped img,
+.fb-video {
+  box-shadow: 0 0 1px 0 transparentize(#fff, 0.5);
+}
+
+.video-wrapped .video-wrapped-play {
+  .small {
+    margin-top: 0.5rem;
+    line-height: 1.1;
+  }
+}
+
+.videos {
+  @include clearfix;
+
+  margin: -0.5rem;
+  padding-bottom: 1rem;
+
+  .video-wrapped {
+    float: left;
+    width: calc(50% - 1rem) !important;
+    margin: 0.5rem;
+
+    @media (max-width: 744px) {
+      width: calc(100% - 1rem) !important;
+    }
+  }
+}

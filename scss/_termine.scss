@@ -1,0 +1,67 @@
+.termine {
+  font-size: 1.2rem;
+
+  @media (max-width: 560px) {
+    .termine__artist,
+    .termine__venue-and-notes {
+      float: none;
+      width: auto;
+    }
+  }
+
+  .termine__item {
+    @include clearfix;
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: $termin-background-color;
+  }
+
+  .termine__date-and-time,
+  .termine__artist,
+  .termine__venue-and-notes {
+    float: left;
+  }
+
+  .termine__date-and-time,
+  .termine__artist {
+    padding-right: 1rem;
+  }
+
+  .termine__date-and-time {
+    width: $termine-date-and-time-width;
+  }
+
+  .termine__infos {
+    margin-left: $termine-date-and-time-width;
+  }
+
+  .termine__artist {
+    width: $termine-artist-width;
+  }
+
+  .termine__venue-and-notes {
+    width: 100% - $termine-artist-width;
+  }
+
+  .termine__time,
+  .termine__address {
+    font-size: 1rem;
+  }
+
+  .termine__venue {
+    color: $link-color;
+  }
+
+  &:not(.past) .termine__item {
+    background: $termin-background-color;
+  }
+
+  &.past .termine__item {
+    background: desaturate($termin-background-color, 20%);
+  }
+}
+
+.gigpress-empty {
+  text-align: center;
+}

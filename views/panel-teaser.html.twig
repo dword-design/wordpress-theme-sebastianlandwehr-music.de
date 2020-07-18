@@ -1,0 +1,13 @@
+{% extends 'components/panel.html.twig' %}
+
+{% block fixed_content %}
+    {% embed 'components/fullscreen-video.html.twig' %}
+        {% block video %}
+            {{ post.content }}
+        {% endblock %}
+    {% endembed %}
+    <div class="panel-teaser__page-width-wrapper">
+        {% include 'components/scroll-link.html.twig' with { url: '#' ~ homePost.post_name, label: 'Startseite' } %}
+        {% include 'components/newsletter.html.twig' %}
+    </div>
+{% endblock %}

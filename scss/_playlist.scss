@@ -1,0 +1,40 @@
+.wp-playlist {
+  margin-top: 0 !important;
+  border: none !important;
+
+  .mejs-container .mejs-controls {
+    background: #111 !important;
+  }
+}
+
+.wp-playlist-light {
+  background: $color3 !important;
+
+  .wp-playlist-caption {
+    color: #fff !important;
+  }
+
+  .wp-playlist-playing {
+    background: lighten($color3, 10%) !important;
+  }
+}
+
+.wp-playlist-item {
+  padding: 0.5rem !important;
+  border-bottom: none !important;
+}
+
+.wp-playlist-item-length {
+  top: 0.5rem !important;
+  right: 0.5rem !important;
+  color: #fff !important;
+  line-height: 1.3 !important;
+}
+
+.wp-playlist-current-item {
+  height: auto !important;
+
+  .wp-playlist-item-title {
+    font-size: $body-font-size !important;
+  }
+}

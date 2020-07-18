@@ -1,0 +1,203 @@
+.panel--teaser {
+  height: 100vh;
+  background-attachment: scroll;
+  background-position: 50% 25%;
+
+  .panel-teaser__page-width-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: $page-max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .newsletter-button {
+    position: absolute;
+    right: 1rem;
+    bottom: 3rem;
+    width: 100%;
+    max-width: 10rem;
+
+    @media (max-width: 400px) {
+      bottom: 5rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .scroll-link {
+    @media (max-width: 400px) {
+      z-index: 1;
+      margin-right: auto;
+      margin-left: auto;
+      color: transparent;
+
+      &:hover,
+      &:focus {
+        color: transparent;
+      }
+    }
+  }
+
+  .footer {
+    background: transparent;
+  }
+}
+
+.panel--home {
+  @include panel-left-half;
+
+  height: 100vh;
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-size: 95%;
+
+  @media (min-aspect-ratio: 190/100) {
+    background-position: right top;
+  }
+
+  @media (max-width: $breakpoint-2) {
+    @include darken;
+    @include panel(600px);
+
+    background-position: right center;
+    background-size: cover;
+  }
+
+  @media (max-width: 400px) {
+    .panel__content-container {
+      padding-top: 8rem;
+    }
+  }
+
+  &.panel--active {
+    height: auto;
+    background-attachment: fixed;
+  }
+
+  .scroll-link {
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-button {
+    width: 100%;
+    max-width: 10rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.panel--bio {
+  @include panel-wide;
+
+  .content-column {
+    @media (max-width: 730px) {
+      width: 100%;
+
+      &.last_column {
+        margin-top: 1rem;
+        padding-right: 0;
+      }
+    }
+    &:not(.last_column) {
+      float: right;
+    }
+
+    &.last_column {
+      float: left;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.panel--fotos {
+  @include darken(0.1);
+  @include panel(1200px);
+}
+
+.panel--songtexte {
+  @include darken;
+  @include panel-narrow;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.panel--musik {
+  @include darken(0.1);
+  @include panel(950px);
+}
+
+.panel--termine {
+  @include darken(0.1);
+  @include panel-narrow;
+
+  .newsletter-button {
+    display: block;
+    max-width: 10rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.panel--kontakt {
+  @include darken(0.1);
+  @include panel-narrow;
+
+  @media (max-width: 400px) {
+    .wpcf7-form-control-wrap {
+      transform: scale(0.77);
+      transform-origin: 0;
+    }
+  }
+
+  .kontakt__container {
+    padding: 1.5rem;
+    padding-top: 3rem;
+    background: $contact-background-color;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  .wpcf7-list-item {
+    margin-left: 0;
+  }
+}
+
+.panel--presse {
+  @include darken;
+  @include panel(900px);
+}
+
+.panel--freunde {
+  @include darken(0.05);
+  @include panel-wide;
+
+  @media (max-width: $breakpoint-4) {
+    .content-column.one_half {
+      width: 100%;
+    }
+
+    .content-column.last_column {
+      margin-top: 1rem;
+      padding-left: 0;
+    }
+  }
+
+  .content-column.last_column {
+    padding-left: 1rem;
+  }
+}
+
+.panel--impressum-und-datenschutz {
+  @include darken;
+  @include panel-narrow;
+}

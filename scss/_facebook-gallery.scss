@@ -1,0 +1,27 @@
+.facebook-gallery {
+  @include clearfix;
+
+  margin: -0.25rem;
+}
+
+.facebook-gallery__item-wrapper {
+  float: left;
+  width: 100%;
+  padding: 0.25rem;
+  line-height: 0;
+
+  &:not(:first-child) {
+    @include at-least(2) {
+      width: 50%;
+    }
+
+    @include at-least(3) {
+      width: 100/3 + 0%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

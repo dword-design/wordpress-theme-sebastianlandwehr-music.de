@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% if wp_title %}{{ wp_title }} - {% endif %}{{ site.name }}</title>
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="{{ site.theme.link }}/dist/style.css">
+
+        {{ function('wp_head') }}
+    </head>
+
+    <body class="{{ body_class }}">
+        {% include 'components/facebook-js-sdk.html.twig' %}
+
+        {% block body_content %}{% endblock %}
+
+        {% include 'components/menu-bar.html.twig' %}
+        {% include 'components/social-links.html.twig' with { slim: function('is_home') } %}
+
+        {{ function('wp_footer') }}
+    </body>
+</html>

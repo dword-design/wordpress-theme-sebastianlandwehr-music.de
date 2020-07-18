@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+  float: left;
+  padding: 0.7rem 0.7rem 0.7rem 1rem;
+  font-size: 2.5rem;
+  font-family: $font-family-logo;
+
+  @media (max-width: $breakpoint-5) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.6rem;
+  }
+}

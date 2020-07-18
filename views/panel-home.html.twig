@@ -1,0 +1,10 @@
+{% extends 'components/panel.html.twig' %}
+
+{% block main_content %}
+    {% include 'components/scroll-link.html.twig' with { direction: 'up', url: '#' ~ teaserPost.post_name, label: 'Teaser-Video' } %}
+    <div class="kuenstler-description">
+        {{ post.content }}
+    </div>
+    {% include 'components/newsletter.html.twig' %}
+    {# {% include 'components/news.html.twig' %} #}
+{% endblock %}
