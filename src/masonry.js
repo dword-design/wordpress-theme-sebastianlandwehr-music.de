@@ -3,8 +3,8 @@ import 'imagesloaded'
 
 const $ = window.jQuery
 const $container = $('.gallery')
-$container.imagesLoaded(function () {
-  $(this).masonry({
+$container.imagesLoaded(() =>
+  $container.masonry({
     itemSelector: '.gallery-item',
   })
-})
+)
