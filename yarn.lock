@@ -1024,9 +1024,9 @@
     get-package-name "^1.0.0"
 
 "@dword-design/base-config-wordpress-theme@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-wordpress-theme/-/base-config-wordpress-theme-1.1.3.tgz#fdca53838e4d44c2e743f2e6a046c2cf21fd88a4"
-  integrity sha512-K+kqISum0zOdfl/Al+zfCTU5XiNLXPsSHhx2NsMXK+HG/iJGe0yhjb8poWkGn1psURhPHuB854196sCNOr22/w==
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-wordpress-theme/-/base-config-wordpress-theme-1.1.4.tgz#41559c1662b7bc18e287f0c0e66331a3c1c948db"
+  integrity sha512-rR7q4G1BcoDUsszMwRoqBfkjZdaFyvaaqIt0CY7ujFsq9MgO9Eqypr6N+N8MrnSU+Yr2AkCgiyeZGN4f8z9Erg==
   dependencies:
     "@dword-design/depcheck-sass-parser" "^1.0.5"
     "@dword-design/functions" "^1.1.3"
@@ -11549,7 +11549,7 @@ stylelint-scss@^3.17.2:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^4.1.0"
 
-stylelint-use-nesting@dword-design/stylelint-use-nesting#fork:
+"stylelint-use-nesting@github:dword-design/stylelint-use-nesting#fork":
   version "3.0.0"
   resolved "https://codeload.github.com/dword-design/stylelint-use-nesting/tar.gz/3fa262d8898e33da3831ed526e45dade37c270e7"
 
