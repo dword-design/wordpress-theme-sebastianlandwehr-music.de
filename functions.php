@@ -5,8 +5,6 @@ use Urodoz\Truncate\Bridge\Twig\TruncateExtension;
 use Urodoz\Truncate\TruncateService;
 use Symfony\Component\Yaml\Yaml;
 
-$config = DwordDesign\Cli\Config::load();
-
 global $socialMedia;
 
 $socialMedia = [
@@ -137,6 +135,7 @@ function openLinksInNewTab($content){
 add_action('wp_ajax_facebook_news', 'facebook_news');
 add_action('wp_ajax_nopriv_facebook_news', 'facebook_news');
 
+/*$config = DwordDesign\Cli\Config::load();
 $fb = new Facebook\Facebook([
     'app_id' => $config->facebook_app_id,
     'app_secret' => $config->facebook_app_secret,
@@ -165,13 +164,13 @@ function facebook_news() {
     die();
 }
 
-add_filter('get_twig', 'twig_extensions');
-function twig_extensions($twig) {
-    $twig->addFilter(new Twig_SimpleFilter('oembed_code', 'oembed_code'));
-    $twig->addFilter(new Twig_SimpleFilter('truncate_keep_html', 'truncate_keep_html'));
-    $twig->addFunction(new Twig_SimpleFunction('facebook_event_picture_url', 'facebook_event_picture_url'));
-    return $twig;
+function facebook_event_picture_url($eventId) {
+    global $fb;
+
+    $facebookResponse = $fb->get('/' . $eventId . '?fields=cover{source}');
+    return  $facebookResponse->getDecodedBody()['cover']['source'];
 }
+*/
 
 function oembed_code($url) {
     $args = ['width' => 1000];
@@ -184,9 +183,11 @@ function truncate_keep_html($text, $length = 100) {
     return $truncateService->truncate($text, $length);
 }
 
-function facebook_event_picture_url($eventId) {
-    global $fb;
-
-    $facebookResponse = $fb->get('/' . $eventId . '?fields=cover{source}');
-    return  $facebookResponse->getDecodedBody()['cover']['source'];
+function twig_extensions($twig) {
+    $twig->addFilter(new Twig_SimpleFilter('oembed_code', 'oembed_code'));
+    $twig->addFilter(new Twig_SimpleFilter('truncate_keep_html', 'truncate_keep_html'));
+    //$twig->addFunction(new Twig_SimpleFunction('facebook_event_picture_url', 'facebook_event_picture_url'));
+    return $twig;
 }
+
+add_filter('get_twig', 'twig_extensions');
