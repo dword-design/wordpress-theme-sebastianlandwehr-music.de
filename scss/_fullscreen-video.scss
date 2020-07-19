@@ -20,7 +20,7 @@
   }
 
   label[for="fullscreen-video__is-playing"] {
-    @nest &:checked ~ & {
+    :checked ~ & {
       top: 4rem;
       right: 1rem;
 
