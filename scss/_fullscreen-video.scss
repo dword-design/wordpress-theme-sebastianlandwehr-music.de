@@ -35,7 +35,8 @@
           font-size: 2rem;
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           &::before {
             color: $play-video-cancel-color-hover;
           }
