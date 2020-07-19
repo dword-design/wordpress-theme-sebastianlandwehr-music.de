@@ -6,5 +6,5 @@
         {{ post.content }}
     </div>
     {% include 'components/newsletter.html.twig' %}
-    {# {% include 'components/news.html.twig' %} #}
+    {{ function('do_shortcode', '[efb_feed fanpage_id=794547823897907 skin_id=574]') }}
 {% endblock %}

@@ -28,7 +28,6 @@ add_image_size('fullscreen', 1920, 99999);
 
 function theme_scripts() {
     wp_enqueue_script('index.js', get_template_directory_uri() . '/dist/index.js', ['jquery'], '1.0.0', true);
-    wp_localize_script('index.js', 'variables', array('ajaxUrl' => admin_url('admin-ajax.php')));
 }
 
 add_action('wp_enqueue_scripts', 'theme_scripts');
@@ -131,46 +130,6 @@ function openLinksInNewTab($content){
 
     return $content;
 }
-
-add_action('wp_ajax_facebook_news', 'facebook_news');
-add_action('wp_ajax_nopriv_facebook_news', 'facebook_news');
-
-/*$config = DwordDesign\Cli\Config::load();
-$fb = new Facebook\Facebook([
-    'app_id' => $config->facebook_app_id,
-    'app_secret' => $config->facebook_app_secret,
-    'default_graph_version' => 'v2.9',
-    'default_access_token' => $config->facebook_app_id . '|' . $config->facebook_app_secret
-]);
-
-function facebook_news() {
-    global $fb;
-
-    try {
-        $url = '/SebastianLandwehrMusic/feed?fields=id,type,created_time,message,link,source,name,parent_id,attachments,object_id,description&limit=10';
-        if (isset($_POST['next'])) {
-            $url .= '&after=' . $_POST['next'];
-        }
-
-        $facebookResponse = $fb->get($url);
-        $feedEdge = $facebookResponse->getGraphEdge();
-        $next = $feedEdge->getMetadata()['paging']['cursors']['after'];
-        Timber::render('components/ajax-news.html.twig', ['posts' => $feedEdge->asArray(), 'next' => $next]);
-
-    } catch (Facebook\Exceptions\FacebookSDKException $e) {
-        echo 'Facebook-Fehler: ' . $e->getMessage();
-    }
-
-    die();
-}
-
-function facebook_event_picture_url($eventId) {
-    global $fb;
-
-    $facebookResponse = $fb->get('/' . $eventId . '?fields=cover{source}');
-    return  $facebookResponse->getDecodedBody()['cover']['source'];
-}
-*/
 
 function oembed_code($url) {
     $args = ['width' => 1000];
