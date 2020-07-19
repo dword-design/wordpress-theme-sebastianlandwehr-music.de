@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.2...v1.0.3) (2020-07-19)
+
+
+### Bug Fixes
+
+* facebook feed ([70964c3](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/70964c389e848df26a0620ae6f1e6ec770388ddd))
+
 ## [1.0.2](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.1...v1.0.2) (2020-07-19)
 
 
