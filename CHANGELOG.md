@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.0...v1.0.1) (2020-07-19)
+
+
+### Bug Fixes
+
+* fix fullscreen video ([6f5d805](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/6f5d805be12fea08dc47ecc8c4d144622343762c))
+* restore fullscreen video ([5a84c0c](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/5a84c0ceeb21b34a50e27ce9ccfa81c205e2ca4d))
+
 # 1.0.0 (2020-07-18)
 
 
