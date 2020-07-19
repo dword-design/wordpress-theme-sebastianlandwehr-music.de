@@ -17,6 +17,106 @@
       padding-top: 6rem;
       background: black;
     }
+  }
+
+  label[for="fullscreen-video__is-playing"] {
+    @nest &:checked ~ & {
+      top: 4rem;
+      right: 1rem;
+
+      .fullscreen-video__button {
+        &::before {
+          @include fa-icon();
+
+          @include simpletrans;
+
+          content: $fa-var-times;
+          color: $play-video-cancel-color;
+          font-size: 2rem;
+        }
+
+        &:hover, &:focus {
+          &::before {
+            color: $play-video-cancel-color-hover;
+          }
+        }
+      }
+
+      .fullscreen-video__privacy {
+        display: none;
+      }
+    }
+
+    position: absolute;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+  }
+
+  .fullscreen-video__is-playing {
+    display: none;
+
+    &:not(:checked) ~ label[for="fullscreen-video__is-playing"] {
+      top: 55%;
+      right: 11rem;
+      left: 11rem;
+
+      @media (max-width: 550px) {
+        top: auto;
+        right: 4rem;
+        bottom: 35%;
+        left: 4rem;
+      }
+
+      .fullscreen-video__button {
+        width: 6rem;
+        height: 6rem;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        border: 2px solid white;
+        border-radius: 100%;
+        background: transparentize(#fff, 0.5);
+        box-shadow: 0 0 100px 0 black;
+        transition: background $simpletrans-time, transform $simpletrans-time;
+
+        &:hover {
+          background: transparentize(#fff, 0.4);
+          transform: scale(1.1);
+        }
+
+        &::after {
+          content: "";
+          position: relative;
+          top: 50%;
+          left: 50%;
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 25px solid transparent;
+          border-bottom: 25px solid transparent;
+          border-left: 50px solid white;
+          transform: translate(-30%, -50%);
+
+          @media (max-width: 550px) {
+            border-top-width: 20px;
+            border-bottom-width: 20px;
+            border-left-width: 40px;
+            transform: translate(-35%, -50%);
+          }
+        }
+      }
+
+      .fullscreen-video__privacy {
+        max-width: 20rem;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        text-align: center;
+        opacity: 0.8;
+      }
+    }
 
     .video-wrapped-play {
       position: absolute;
