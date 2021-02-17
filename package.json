@@ -22,7 +22,7 @@
     "font-awesome": "^4.7.0",
     "imagesloaded": "^4.1.4",
     "masonry-layout": "^4.2.1",
-    "reset-css": "^2.2.1"
+    "reset-css": "^5.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^7.0.0",
