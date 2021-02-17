@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.6...v1.0.7) (2021-02-17)
+
+
+### Bug Fixes
+
+* add screenshot ([6cbd0cf](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/6cbd0cf7f678714c9b9b696e6baaec025dadba94))
+
 ## [1.0.6](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.5...v1.0.6) (2021-02-17)
 
 
