@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.7...v1.0.8) (2021-02-17)
+
+
+### Bug Fixes
+
+* update dependency reset-css to v5 ([#1](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/issues/1)) ([3b864ca](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/3b864ca768b66d4ac057d17ee40590a5c0461a1d))
+
 ## [1.0.7](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.6...v1.0.7) (2021-02-17)
 
 
