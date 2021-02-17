@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.5...v1.0.6) (2021-02-17)
+
+
+### Bug Fixes
+
+* fix linting ([a947b21](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/a947b2116b54e46f0cb7369998dac963abe428bf))
+* upgrades ([c847478](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/c847478b7d9e985fcdc0f220d0adc6e7c3e5ff7f))
+
 ## [1.0.5](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.4...v1.0.5) (2020-09-21)
 
 
