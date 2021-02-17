@@ -1,6 +1,6 @@
 const $ = window.jQuery
 let previousScrollPosition = 0
-function updatePanels() {
+const updatePanels = () => {
   const $panels = $('.panel')
   if ($panels.length >= 2) {
     const currentScrollPosition = $(window).scrollTop()

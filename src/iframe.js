@@ -1,5 +1,5 @@
 const $ = window.jQuery
-$.iframe = function () {
+$.iframe = () => {
   $('iframe').each(function () {
     const $parent = $(this).parent()
     if ($parent.length > 0 && $(this).outerWidth() > $parent.width()) {
