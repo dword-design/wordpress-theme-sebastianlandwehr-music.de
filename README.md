@@ -11,7 +11,7 @@
       >
     </a><a href="https://codecov.io/gh/dword-design/wordpress-theme-sebastianlandwehr-music.de">
       <img
-        src="https://codecov.io/gh/dword-design/wordpress-theme-sebastianlandwehr-music.de/branch/master/graph/badge.svg"
+        src="https://codecov.io/gh/dword-design/wordpress-theme-sebastianlandwehr-music.de/branch/master/graph/badge.svg?token=5MARQZXK33"
         alt="Coverage status"
       >
     </a><a href="https://david-dm.org/dword-design/wordpress-theme-sebastianlandwehr-music.de">
