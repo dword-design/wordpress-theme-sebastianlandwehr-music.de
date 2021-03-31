@@ -10,5 +10,6 @@ $.iframe = () => {
     }
   })
 }
+
 const updateIframeSize = () => $.iframe()
 $(window).resize(updateIframeSize)
