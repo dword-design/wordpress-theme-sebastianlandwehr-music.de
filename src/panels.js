@@ -1,9 +1,11 @@
 const $ = window.jQuery
 let previousScrollPosition = 0
+
 const updatePanels = () => {
   const $panels = $('.panel')
   if ($panels.length >= 2) {
     const currentScrollPosition = $(window).scrollTop()
+
     const $previousActivePanel = $('.panel--active')
     let $newActivePanel = $panels.first()
     $panels.each(function () {
