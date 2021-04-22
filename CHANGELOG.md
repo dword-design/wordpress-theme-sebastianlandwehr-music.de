@@ -1,3 +1,11 @@
+## [1.0.15](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.14...v1.0.15) (2021-04-22)
+
+
+### Bug Fixes
+
+* update config files ([5263e07](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/5263e073dcee1f51999328fb1ed8da134a4aeaae))
+* updated package.json[description] ([#20](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/issues/20)) ([21540d4](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/21540d4ac4fd4391d134b9b00826471da94528ee))
+
 ## [1.0.14](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.13...v1.0.14) (2021-04-21)
 
 
