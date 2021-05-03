@@ -11,10 +11,6 @@ Version: 1.0
 @import "~font-awesome/scss/font-awesome";
 @import "~family.scss/source/src/family";
 
-* {
-  box-sizing: border-box;
-}
-
 @import "mixins";
 @import "layout";
 @import "panels";
@@ -43,3 +39,7 @@ Version: 1.0
 @import "fonts/alegreya-sc";
 @import "fonts/amatica-sc";
 @import "fonts/social";
+
+* {
+  box-sizing: border-box;
+}
