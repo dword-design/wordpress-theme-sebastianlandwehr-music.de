@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.18...v1.0.19) (2021-05-28)
+
+
+### Bug Fixes
+
+* update config files ([be52806](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/be528065d2b4cbac9c871eb2d186f9a77bf51763))
+
 ## [1.0.18](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.17...v1.0.18) (2021-05-03)
 
 
