@@ -1,3 +1,10 @@
+## [1.0.30](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.29...v1.0.30) (2021-09-06)
+
+
+### Bug Fixes
+
+* lock file maintenance ([37f035c](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/commit/37f035cad00246e90c93a2e78e8bedfe9ec96ca9))
+
 ## [1.0.29](https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/compare/v1.0.28...v1.0.29) (2021-08-30)
 
 
