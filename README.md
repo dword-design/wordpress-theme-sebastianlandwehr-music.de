@@ -1,9 +1,9 @@
 <!-- TITLE/ -->
-# main-theme
+# wordpress-theme-sebastianlandwehr-music.de
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-<p>
+  <p>
     <img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/actions">
       <img
         src="https://github.com/dword-design/wordpress-theme-sebastianlandwehr-music.de/workflows/build/badge.svg"
@@ -53,10 +53,10 @@
 
 ```bash
 # npm
-$ npm install main-theme
+$ npm install wordpress-theme-sebastianlandwehr-music.de
 
 # Yarn
-$ yarn add main-theme
+$ yarn add wordpress-theme-sebastianlandwehr-music.de
 ```
 <!-- /INSTALL -->
 
